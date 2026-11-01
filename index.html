@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi primera página web</title>
+  <style>
+    :root {
+      --fondo: #0f1014;
+      --texto: #f2f2f5;
+      --suave: #9a9aa8;
+      --acento: #6ee7b7;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--fondo);
+      color: var(--texto);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+
+    main { max-width: 42rem; }
+
+    .etiqueta {
+      display: inline-block;
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--acento);
+      border: 1px solid var(--acento);
+      border-radius: 999px;
+      padding: 0.25rem 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 6vw, 3.25rem);
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+    }
+
+    h1 span { color: var(--acento); }
+
+    p { color: var(--suave); margin-bottom: 1rem; max-width: 34rem; }
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 2rem;
+    }
+
+    li {
+      border: 1px solid #2a2a35;
+      border-radius: 0.5rem;
+      padding: 0.5rem 0.9rem;
+      font-size: 0.9rem;
+      color: var(--texto);
+    }
+
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #2a2a35;
+      font-size: 0.85rem;
+      color: var(--suave);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="etiqueta">Actividad de control de versiones</span>
+
+    <h1>Hola, soy <span>Jordan</span>.</h1>
+
+    <p>
+      Esta es mi primera página web, creada para la práctica de Git y GitHub.
+      Aquí estoy aprendiendo a construir con HTML y CSS y a guardar mi trabajo
+      con control de versiones.
+    </p>
+
+    <p>
+      Cada cambio que hago queda registrado como un <em>commit</em>, y el
+      proyecto completo se publica en un repositorio de GitHub.
+    </p>
+
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Git</li>
+      <li>GitHub</li>
+    </ul>
+
+    <footer>
+      Subido a GitHub como práctica de clase.
+    </footer>
+  </main>
+</body>
+</html>
